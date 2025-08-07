@@ -42,3 +42,5 @@ def decompress_lzhuf(inputFilePath, outputFilePath):
 	result = subprocess.run([binary, inputFilePath, outputFilePath], capture_output=True, text=True)
 	return result.stdout.strip()
 ```
+
+Everybody deserves a good decompression.
