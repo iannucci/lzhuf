@@ -1,13 +1,13 @@
 # lzhuf
 
-LZH code from la5nta/wl2k-go to perform decompression of Winlink messages, wrapped so that it can be called from Python.  A binary executable of the go code will be installed (supported on Linux x86, Mac x86 and Mac ARM64).  Sorry, Windows.
+LZH code from [la5nta/wl2k-go](https://github.com/la5nta/wl2k-go) to perform decompression of Winlink messages, wrapped so that it can be called from Python.  A binary executable of the go code will be installed (supported on Linux x86, Mac x86 and Mac ARM64).  Sorry, Windows.
 
 ## Installation
 
 Clone this repo to <dir>
 
 ```
-$ cd <dir>\
+$ cd <dir>
 $ make clean
 $ make
 $ sudo make install
@@ -18,7 +18,7 @@ $ sudo make install
 From Python:
 
 ```
-import subprocess\
+import subprocess
 import platform
 import os
 
