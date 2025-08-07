@@ -4,7 +4,7 @@ LZH code from [la5nta/wl2k-go](https://github.com/la5nta/wl2k-go) to perform dec
 
 ## Installation
 
-Clone this repo to \<dir>
+Clone this repo to `\<dir>`
 
 ```
 $ cd <dir>
