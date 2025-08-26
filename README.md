@@ -21,26 +21,13 @@ From Python:
 
 ```
 import subprocess
-import platform
-import os
 
-def get_go_binary():
-    system = platform.system()
-	machine = platform.machine()
-
-	if system == "Linux":
-	    return "./decompress-linux"
-	elif system == "Darwin" and machine == "x86_64":
-		return "./decompress-mac"
-	elif system == "Darwin" and machine == "arm64":
-		return "./decompress-mac-arm"
-	else:
-		raise RuntimeError(f"Unsupported platform: {system} {machine}")
+GO_EXECUTABLE = "./decompress_lzhuf"
 
 def decompress_lzhuf(inputFilePath, outputFilePath):
 	binary = get_go_binary()
-	result = subprocess.run([binary, inputFilePath, outputFilePath], capture_output=True, text=True)
+	result = subprocess.run([GO_EXECUTABLE, inputFilePath, outputFilePath], capture_output=True, text=True)
 	return result.stdout.strip()
 ```
 
-Everybody deserves a good decompression.
+Everyone should decompress regularly.

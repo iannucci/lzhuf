@@ -1,7 +1,7 @@
 # Makefile for cross-building Go binaries for macOS and Linux
 # Adjust APP_NAME as needed
-APP_NAME := decompress
-SRC := main/decompress.go
+APP_NAME := decompress_lzhuf
+SRC := main/decompress_lzhuf.go
 BUILD_DIR := main/build
 INSTALL_PATH := /usr/local/bin
 
